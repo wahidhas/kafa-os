@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KAFA OS | Founder Dashboard</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta20/dist/css/tabler.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="sidebar-brand">
+          <span class="brand-mark">K</span>
+          <div>
+            <strong>KAFA OS</strong>
+            <span>Partner Operating System</span>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a class="sidebar-link active" href="#" aria-current="page">
+            <i class="ti ti-layout-dashboard"></i>
+            <span>Dashboard</span>
+          </a>
+          <a class="sidebar-link" href="#">
+            <i class="ti ti-building-community"></i>
+            <span>Partners</span>
+          </a>
+          <a class="sidebar-link" href="#">
+            <i class="ti ti-school"></i>
+            <span>Academic</span>
+          </a>
+          <a class="sidebar-link" href="#">
+            <i class="ti ti-rocket"></i>
+            <span>Bootcamp</span>
+          </a>
+          <a class="sidebar-link" href="#">
+            <i class="ti ti-report-money"></i>
+            <span>Finance</span>
+          </a>
+          <a class="sidebar-link" href="#">
+            <i class="ti ti-chart-bar"></i>
+            <span>Reports</span>
+          </a>
+          <a class="sidebar-link" href="#">
+            <i class="ti ti-files"></i>
+            <span>Documents</span>
+          </a>
+          <a class="sidebar-link" href="#">
+            <i class="ti ti-settings"></i>
+            <span>Settings</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <span class="status-pill"><i class="ti ti-circle-filled"></i> Operational</span>
+          <small>KAFA OS &ndash; Partner Operating System</small>
+        </div>
+      </aside>
+
+      <div class="main-shell">
+        <header class="topbar">
+          <button class="icon-button sidebar-toggle" type="button" aria-label="Open navigation">
+            <i class="ti ti-menu-2"></i>
+          </button>
+
+          <form class="search-form" role="search" autocomplete="off">
+            <i class="ti ti-search" aria-hidden="true"></i>
+            <input id="globalSearch" type="search" placeholder="Search partners, invoices, reports..." aria-label="Search">
+            <div class="search-autocomplete" id="searchAutocomplete" hidden>
+              <button type="button" data-query="Partner overdue invoice">
+                <i class="ti ti-file-invoice"></i>
+                <span>Partner overdue invoice</span>
+                <small>Finance</small>
+              </button>
+              <button type="button" data-query="Bootcamp cohort performance">
+                <i class="ti ti-chart-line"></i>
+                <span>Bootcamp cohort performance</span>
+                <small>Academic</small>
+              </button>
+              <button type="button" data-query="Signed MoU documents">
+                <i class="ti ti-file-check"></i>
+                <span>Signed MoU documents</span>
+                <small>Documents</small>
+              </button>
+            </div>
+          </form>
+
+          <div class="topbar-actions">
+            <div class="dropdown">
+              <button class="icon-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+                <i class="ti ti-bell"></i>
+                <span class="notification-dot"></span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-end notification-menu">
+                <div class="dropdown-header">Notifications</div>
+                <a class="dropdown-item" href="#">
+                  <i class="ti ti-alert-circle text-warning"></i>
+                  <span>3 partner invoices need follow-up</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="ti ti-file-check text-blue"></i>
+                  <span>2 agreements are ready for signature</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="ti ti-user-plus text-green"></i>
+                  <span>5 new partner leads entered pipeline</span>
+                </a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="icon-button theme-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Theme">
+                <i class="ti ti-device-desktop"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-end theme-menu">
+                <button class="dropdown-item theme-option" type="button" data-theme-value="light">
+                  <i class="ti ti-sun"></i>
+                  Light
+                </button>
+                <button class="dropdown-item theme-option" type="button" data-theme-value="dark">
+                  <i class="ti ti-moon"></i>
+                  Dark
+                </button>
+                <button class="dropdown-item theme-option" type="button" data-theme-value="auto">
+                  <i class="ti ti-device-desktop"></i>
+                  Auto
+                </button>
+              </div>
+            </div>
+            <button class="profile-button" type="button" aria-label="User profile">
+              <span class="avatar avatar-sm">WH</span>
+              <span class="profile-meta">
+                <strong>Wahid Hasyim</strong>
+                <small>Founder</small>
+              </span>
+            </button>
+          </div>
+        </header>
+
+        <main class="content">
+          <section class="hero-section">
+            <div class="hero-content">
+              <span class="eyebrow">Founder Dashboard</span>
+              <p class="hero-greeting">Good Evening, Wahid Hasyim</p>
+              <h1>Executive view</h1>
+              <p class="hero-subtitle">Partner growth, program execution, revenue control, and founder decisions in one workspace.</p>
+            </div>
+            <div class="hero-metrics" aria-label="Executive snapshot">
+              <div>
+                <span>Monthly Run Rate</span>
+                <strong>Rp 2.980.000.000</strong>
+              </div>
+              <div>
+                <span>Partner Health</span>
+                <strong>87%</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="command-center">
+            <article class="panel priority-panel">
+              <div class="panel-header">
+                <div>
+                  <h2>Founder Command Center</h2>
+                  <p>Today's Priority</p>
+                </div>
+                <span class="status-pill status-urgent">High focus</span>
+              </div>
+              <div class="priority-stack">
+                <div class="priority-item">
+                  <span class="priority-rank">01</span>
+                  <div>
+                    <strong>Recover delayed partner payments</strong>
+                    <small>Potential cash recovery: Rp 292.000.000</small>
+                  </div>
+                </div>
+                <div class="priority-item">
+                  <span class="priority-rank">02</span>
+                  <div>
+                    <strong>Approve Q3 academic expansion shortlist</strong>
+                    <small>8 institutions ready for founder decision</small>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel quick-actions-panel">
+              <div class="panel-header">
+                <div>
+                  <h2>Quick Actions</h2>
+                  <p>Founder-level workflow shortcuts</p>
+                </div>
+              </div>
+              <div class="quick-actions">
+                <button class="quick-action" type="button">
+                  <i class="ti ti-user-plus"></i>
+                  Add Partner
+                </button>
+                <button class="quick-action" type="button">
+                  <i class="ti ti-file-invoice"></i>
+                  Issue Invoice
+                </button>
+                <button class="quick-action" type="button">
+                  <i class="ti ti-signature"></i>
+                  Sign Document
+                </button>
+                <button class="quick-action" type="button">
+                  <i class="ti ti-report-analytics"></i>
+                  Build Report
+                </button>
+              </div>
+            </article>
+          </section>
+
+          <section class="kpi-grid" aria-label="Key performance indicators">
+            <article class="kpi-card">
+              <div class="kpi-head">
+                <div class="kpi-icon bg-blue-lt text-blue"><i class="ti ti-users"></i></div>
+                <span class="growth positive"><i class="ti ti-trending-up"></i> 12.8%</span>
+              </div>
+              <span>Total Partners</span>
+              <strong>128</strong>
+              <small>+14 new partners</small>
+              <canvas class="sparkline" id="sparkTotalPartners" aria-label="Total partners sparkline"></canvas>
+            </article>
+            <article class="kpi-card">
+              <div class="kpi-head">
+                <div class="kpi-icon bg-green-lt text-green"><i class="ti ti-user-check"></i></div>
+                <span class="growth positive"><i class="ti ti-trending-up"></i> 8.3%</span>
+              </div>
+              <span>Active Partners</span>
+              <strong>96</strong>
+              <small>75% activation rate</small>
+              <canvas class="sparkline" id="sparkActivePartners" aria-label="Active partners sparkline"></canvas>
+            </article>
+            <article class="kpi-card">
+              <div class="kpi-head">
+                <div class="kpi-icon bg-azure-lt text-azure"><i class="ti ti-cash"></i></div>
+                <span class="growth positive"><i class="ti ti-trending-up"></i> 18.4%</span>
+              </div>
+              <span>Revenue This Month</span>
+              <strong>Rp 2.980.000.000</strong>
+              <small>Rp 480.000.000 above plan</small>
+              <canvas class="sparkline" id="sparkRevenue" aria-label="Revenue sparkline"></canvas>
+            </article>
+            <article class="kpi-card">
+              <div class="kpi-head">
+                <div class="kpi-icon bg-yellow-lt text-yellow"><i class="ti ti-file-invoice"></i></div>
+                <span class="growth negative"><i class="ti ti-trending-down"></i> 4.1%</span>
+              </div>
+              <span>Outstanding Invoice</span>
+              <strong>Rp 680.000.000</strong>
+              <small>14 invoices pending</small>
+              <canvas class="sparkline" id="sparkOutstanding" aria-label="Outstanding invoice sparkline"></canvas>
+            </article>
+            <article class="kpi-card">
+              <div class="kpi-head">
+                <div class="kpi-icon bg-indigo-lt text-indigo"><i class="ti ti-percentage"></i></div>
+                <span class="growth positive"><i class="ti ti-trending-up"></i> 4.2 pts</span>
+              </div>
+              <span>Conversion Rate</span>
+              <strong>38.7%</strong>
+              <small>Lead to signed partner</small>
+              <canvas class="sparkline" id="sparkConversion" aria-label="Conversion rate sparkline"></canvas>
+            </article>
+            <article class="kpi-card">
+              <div class="kpi-head">
+                <div class="kpi-icon bg-purple-lt text-purple"><i class="ti ti-device-laptop"></i></div>
+                <span class="growth positive"><i class="ti ti-trending-up"></i> 6.7%</span>
+              </div>
+              <span>Bootcamp Active</span>
+              <strong>11</strong>
+              <small>342 learners enrolled</small>
+              <canvas class="sparkline" id="sparkBootcamp" aria-label="Bootcamp active sparkline"></canvas>
+            </article>
+            <article class="kpi-card">
+              <div class="kpi-head">
+                <div class="kpi-icon bg-teal-lt text-teal"><i class="ti ti-briefcase"></i></div>
+                <span class="growth positive"><i class="ti ti-trending-up"></i> 9.5%</span>
+              </div>
+              <span>Business Launch</span>
+              <strong>24</strong>
+              <small>7 ready for market</small>
+              <canvas class="sparkline" id="sparkBusiness" aria-label="Business launch sparkline"></canvas>
+            </article>
+            <article class="kpi-card">
+              <div class="kpi-head">
+                <div class="kpi-icon bg-cyan-lt text-cyan"><i class="ti ti-books"></i></div>
+                <span class="growth positive"><i class="ti ti-trending-up"></i> 11.2%</span>
+              </div>
+              <span>Academic Batch</span>
+              <strong>18</strong>
+              <small>6 campuses operating</small>
+              <canvas class="sparkline" id="sparkAcademic" aria-label="Academic batch sparkline"></canvas>
+            </article>
+          </section>
+
+          <section class="dashboard-grid">
+            <article class="panel panel-large">
+              <div class="panel-header">
+                <div>
+                  <h2>Revenue Trend</h2>
+                  <p>Monthly revenue across KAFA programs</p>
+                </div>
+                <button class="icon-button muted" type="button" aria-label="Revenue options">
+                  <i class="ti ti-dots"></i>
+                </button>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="revenueTrendChart" aria-label="Revenue trend chart"></canvas>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2>Partner Growth</h2>
+                  <p>New partner acquisition</p>
+                </div>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="partnerGrowthChart" aria-label="Partner growth chart"></canvas>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2>Pipeline Funnel</h2>
+                  <p>Lead to signed partner flow</p>
+                </div>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="pipelineFunnelChart" aria-label="Pipeline funnel chart"></canvas>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2>Today's Tasks</h2>
+                  <p>Priority actions for founder review</p>
+                </div>
+              </div>
+              <div class="task-list">
+                <label class="task-item">
+                  <input class="form-check-input" type="checkbox">
+                  <span>Review strategic partner proposal</span>
+                  <small>09:30</small>
+                </label>
+                <label class="task-item">
+                  <input class="form-check-input" type="checkbox" checked>
+                  <span>Approve bootcamp invoice batch</span>
+                  <small>11:00</small>
+                </label>
+                <label class="task-item">
+                  <input class="form-check-input" type="checkbox">
+                  <span>Prepare academic MoU follow-up</span>
+                  <small>14:15</small>
+                </label>
+                <label class="task-item">
+                  <input class="form-check-input" type="checkbox">
+                  <span>Check delayed certificate issuance</span>
+                  <small>16:00</small>
+                </label>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2>Recent Activity</h2>
+                  <p>Operational movements across KAFA OS</p>
+                </div>
+              </div>
+              <ol class="timeline-list">
+                <li>
+                  <span class="timeline-dot"></span>
+                  <div>
+                    <strong>Invoice KFA-2026-0182 paid</strong>
+                    <small>Rp 86.000.000 received 12 minutes ago</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-dot"></span>
+                  <div>
+                    <strong>New partner onboarding started</strong>
+                    <small>Akademi Selatan moved to activation</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-dot"></span>
+                  <div>
+                    <strong>Bootcamp cohort reached 82%</strong>
+                    <small>Completion forecast improved today</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-dot"></span>
+                  <div>
+                    <strong>Documents awaiting signature</strong>
+                    <small>3 agreements require founder approval</small>
+                  </div>
+                </li>
+              </ol>
+            </article>
+
+            <article class="panel ai-panel">
+              <div class="ai-panel-head">
+                <div class="ai-icon"><i class="ti ti-sparkles"></i></div>
+                <div>
+                  <h2>AI Insight</h2>
+                  <p>Actionable recommendations</p>
+                </div>
+              </div>
+              <div class="insight-list">
+                <div class="insight-item">
+                  <strong>Recover revenue risk</strong>
+                  <span>Send executive reminders to 14 partners with invoices above 21 days.</span>
+                  <small>Estimated recovery: Rp 292.000.000</small>
+                </div>
+                <div class="insight-item">
+                  <strong>Scale high-performing channel</strong>
+                  <span>Double outreach to institutions matching the Bandung partner profile.</span>
+                  <small>Projected lift: +19 qualified leads</small>
+                </div>
+              </div>
+              <div class="recommendation-actions">
+                <button class="btn btn-primary" type="button">Create Action Plan</button>
+                <button class="btn btn-outline-primary" type="button">View Partners</button>
+              </div>
+            </article>
+
+            <article class="panel distribution-panel">
+              <div class="panel-header">
+                <div>
+                  <h2>Indonesia Partner Distribution</h2>
+                  <p>Regional operating footprint</p>
+                </div>
+              </div>
+              <div class="map-placeholder" aria-label="Indonesia partner distribution placeholder">
+                <svg viewBox="0 0 420 190" role="img" aria-labelledby="mapTitle">
+                  <title id="mapTitle">Indonesia partner distribution</title>
+                  <path d="M28 92c34-16 64-14 91-4 24 9 44 10 70-4 34-18 70-15 102 2 29 15 57 13 100-4" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" opacity="0.22"></path>
+                  <path d="M62 128c42-11 81-9 118 3 32 10 61 7 96-6 34-12 65-9 98 8" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" opacity="0.16"></path>
+                  <circle cx="92" cy="86" r="10"></circle>
+                  <circle cx="178" cy="96" r="7"></circle>
+                  <circle cx="252" cy="78" r="12"></circle>
+                  <circle cx="326" cy="99" r="8"></circle>
+                  <circle cx="365" cy="132" r="6"></circle>
+                </svg>
+              </div>
+              <div class="region-list">
+                <span><strong>42</strong> Java</span>
+                <span><strong>21</strong> Sumatra</span>
+                <span><strong>13</strong> Kalimantan</span>
+                <span><strong>9</strong> Sulawesi</span>
+              </div>
+            </article>
+
+            <article class="panel calendar-panel">
+              <div class="panel-header">
+                <div>
+                  <h2>Smart Calendar</h2>
+                  <p>Upcoming founder commitments</p>
+                </div>
+              </div>
+              <div class="calendar-list">
+                <div class="calendar-item">
+                  <time datetime="2026-07-06">06 Jul</time>
+                  <div>
+                    <strong>Partner revenue review</strong>
+                    <small>09:00 &ndash; Finance war room</small>
+                  </div>
+                </div>
+                <div class="calendar-item">
+                  <time datetime="2026-07-07">07 Jul</time>
+                  <div>
+                    <strong>Academic expansion decision</strong>
+                    <small>13:30 &ndash; 8 institutions</small>
+                  </div>
+                </div>
+                <div class="calendar-item">
+                  <time datetime="2026-07-08">08 Jul</time>
+                  <div>
+                    <strong>Bootcamp cohort launch</strong>
+                    <small>10:00 &ndash; Product and mentors</small>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <div class="mobile-backdrop" hidden></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta20/dist/js/tabler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+  </body>
+</html>
